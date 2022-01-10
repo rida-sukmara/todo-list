@@ -14,7 +14,7 @@ void main() {
   group("task model", () {
     test('create task model with category', () async {
       // asset
-      Task(name: "Meeting", category: workCategory, isToday: true);
+      Task(name: "Meeting", category: workCategory, dateTime: DateTime.now());
     });
 
     test('category on task must same with created category on constructor ',
