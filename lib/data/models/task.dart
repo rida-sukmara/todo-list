@@ -6,6 +6,10 @@ class Task extends Equatable {
   final DateTime? dateTime;
   final Category category;
 
+  bool isTodayTask() {
+    return dateTime?.day == DateTime.now().day;
+  }
+
   const Task(
       {required this.name, required this.category, this.dateTime });
 
