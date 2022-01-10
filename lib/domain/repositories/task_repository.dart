@@ -5,4 +5,5 @@ abstract class TaskRepository {
   Future<Task> delete({ required Task task });
   Future<Task> complate({ required Task task });
   Future<List<Task>> tasks();
+  Future<List<Task>> todayTasks();
 }
