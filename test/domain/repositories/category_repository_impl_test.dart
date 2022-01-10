@@ -3,7 +3,7 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:todo_list/data/datasources/local/category_local_datasource_impl.dart';
 import 'package:todo_list/data/models/category.dart';
-import 'package:todo_list/domain/repositories/categry_repository_impl.dart';
+import 'package:todo_list/domain/repositories/category_repository_impl.dart';
 
 import 'category_repository_impl_test.mocks.dart';
 
