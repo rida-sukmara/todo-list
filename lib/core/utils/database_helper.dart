@@ -8,7 +8,7 @@ import 'package:todo_list/data/models/task.dart';
 
 class DatabaseHelper {
   static const _databaseName = "todo_list.db";
-  static const _databaseVersion = 2;
+  static const _databaseVersion = 1;
 
   DatabaseHelper._privateConstructor();
 
@@ -18,7 +18,7 @@ class DatabaseHelper {
 
   Future<Database> get database async {
     // ignore: unnecessary_null_comparison
-    if (_database != null) return _database;
+    // if (_database != null) return _database;
     // lazily instantiate the db the first time it is accessed
     _database = await _initDb();
     return _database;

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todo_list/core/utils/routes.dart';
+import 'package:todo_list/presentation/widgets/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,18 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      initialRoute: HomeScreen.routeName,
+      routes: appRoutes,
+      debugShowCheckedModeBanner: false,
+      title: 'Todo List',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Todo List"),
-          ),
-        body: const Center(
-          child: Text("Todo Apps"),
-        ),
-      )
+      home: const HomeScreen(),
     );
   }
 }
